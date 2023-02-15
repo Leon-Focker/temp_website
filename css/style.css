@@ -11,8 +11,17 @@
 
 body{
     background-image: url("../images/wallpaper_50.jpg");
-    background-size: auto 150%;
+    background-size: cover;
     background-color: var(--bgColor);
+    background-repeat: no-repeat;
+}
+
+
+@media screen and (max-width: 1200px) {
+    body{
+        background-size: auto 150%;
+    }
+    
 }
 
 #userPhoto{
@@ -50,7 +59,7 @@ body{
     padding: 17px;
     text-decoration: none;
     font-size: 1rem;
-    opacity: 90%;
+    opacity: 85%;
     transition: all .25s cubic-bezier(.08,.59,.29,.99);
     border: solid var(--accentColor) 2px;
 }
